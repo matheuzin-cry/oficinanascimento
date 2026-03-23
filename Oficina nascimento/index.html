@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link rel="icon" href="logo.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oficina Nascimento</title>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: url('carro luxo.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+        }
+        
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        nav a:hover {
+            text-decoration: underline;
+        }
+        
+        .container {
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 40px 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            color: white;
+            backdrop-filter: blur(4px);
+            -webkit-backdrop-filter: blur(4px);
+            box-sizing: border-box;
+        }
+        
+        .content-wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        h1,
+        h2,
+        h3,
+        p,
+        li,
+        a {
+            color: #fff;
+        }
+        
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        
+        .galeria figure {
+            width: 200px;
+            text-align: center;
+        }
+        
+        .galeria img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+        
+        .galeria figcaption {
+            margin-top: 8px;
+            font-weight: bold;
+            color: #00e676;
+        }
+        
+        .clique-aqui-animado {
+            color: #e60000;
+            font-weight: bold;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .clique-aqui-animado:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px #e60000;
+        }
+        
+        .link-animado {
+            transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .link-animado:hover {
+            color: #00ff88;
+            transform: scale(1.05);
+            text-shadow: 0 0 8px #00ff88;
+        }
+        
+        .whatsapp-float {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            opacity: 0;
+            animation: fadeInUp 1s forwards;
+            animation-delay: 0.5s;
+        }
+        
+        .whatsapp-float img {
+            width: 60px;
+            height: 60px;
+            cursor: pointer;
+        }
+        
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        footer {
+            background-color: #000;
+            text-align: center;
+            padding: 15px;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+    <a class="whatsapp-float" href="https://wa.me/5521964137367" target="_blank" aria-label="Contato WhatsApp">
+        <img src="whatsap2.png" alt="Contato WhatsApp" />
+    </a>
+
+    <header>
+        <h1>Oficina Nascimento</h1>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#galeria">Localização</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="content-wrapper">
+            <section id="inicio">
+                <h2>Bem-vindo à Oficina Nascimento</h2>
+                <p>Excelência em serviços automotivos com qualidade e confiança.</p>
+            </section>
+
+            <section id="servicos">
+                <h2>Serviços</h2>
+                <ul>
+                    <li>Troca de óleo</li>
+                    <li>Revisão completa</li>
+                    <li>Serviços de freios</li>
+                    <li>Mecânica geral</li>
+                    <li>Troca de embreagem</li>
+                    <li>Suspensão e amortecedores</li>
+                    <li>Diagnóstico eletrônico</li>
+                    <li>Troca de correia dentada</li>
+                </ul>
+            </section>
+
+            <section id="sobre">
+                <h2>Sobre nós</h2>
+                <p>Com anos de experiência, a Oficina Nascimento é referência em mecânica automotiva, oferecendo atendimento personalizado e serviço de qualidade.</p>
+                <p>Nosso compromisso é com a transparência, honestidade e a satisfação total dos nossos clientes.</p>
+                <p>Trabalhamos com paixão por carros e respeito por quem os dirige.</p>
+                <p>Investimos constantemente em tecnologia e treinamento para garantir um serviço ágil, preciso e confiável.</p>
+                <h3>Missão</h3>
+                <p>Proporcionar serviços automotivos de alta qualidade, garantindo segurança e desempenho ao cliente.</p>
+                <h3>Valores</h3>
+                <p>Valores acessíveis com qualidade incomparável! Pague justo por um serviço profissional.</p>
+                <h3>Por que escolher a Oficina Nascimento?</h3>
+                <p>Experiência, dedicação, atendimento rápido, honestidade e compromisso com sua segurança.</p>
+            </section>
+
+            <section id="galeria" class="galeria" style="justify-content: center;">
+                <h2 style="width: 100%; text-align: center;">Localização</h2>
+                <a href="https://www.google.com/maps/place/R.+Maur%C3%ADcio+de+Abreu,+27+-+Jardim+Vinte+e+Cinco+de+Agosto,+Duque+de+Caxias+-+RJ,+25070-050" target="_blank" style="display: block; width: 100%; max-width: 600px; border-radius: 15px; overflow: hidden; box-shadow: 0 0 10px rgba(255,255,255,0.2);">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.1912914985856!2d-43.29649992489209!3d-22.79135013472695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9963d14d69b459%3A0xa53d72eb9c7ff9e0!2sR.%20Maur%C3%ADcio%20de%20Abreu%2027%20-%20Jardim%20Vinte%20e%20Cinco%20de%20Agosto%2C%20Duque%20de%20Caxias%20-%20RJ%2C%2025070-050!5e0!3m2!1spt-BR!2sbr!4v1716406580510!5m2!1spt-BR!2sbr"
+                        width="100%" height="400" style="border:0; pointer-events: none;" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+                </a>
+            </section>
+
+            </section>
+
+            <section id="mensagens">
+                <h2 style="text-align:center; margin-bottom: 20px;">Destaques da Oficina</h2>
+                <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px;">
+                    <div style="flex: 1 1 45%; background-color: rgba(0,0,0,0.5); padding: 20px; border-radius: 10px;">
+                        <h3>Sua Oficina de Confiança</h3>
+                        <p>Precisando de serviços mecânicos confiáveis? Nossa equipe está aqui para ajudar!</p>
+                    </div>
+                    <div style="flex: 1 1 45%; background-color: rgba(0,0,0,0.5); padding: 20px; border-radius: 10px;">
+                        <h3>Reparos Rápidos e Eficientes</h3>
+                        <p>Volte à estrada rapidamente com nossa equipe especializada!</p>
+                    </div>
+                    <div style="flex: 1 1 45%; background-color: rgba(0,0,0,0.5); padding: 20px; border-radius: 10px;">
+                        <h3>Prevenção é Economia</h3>
+                        <p>Evite gastos com revisões regulares. Prevenir é sempre melhor!</p>
+                    </div>
+                    <div style="flex: 1 1 45%; background-color: rgba(0,0,0,0.5); padding: 20px; border-radius: 10px;">
+                        <h3>Atendimento Personalizado</h3>
+                        <p>Tratamos cada cliente como único. Soluções sob medida para você.</p>
+                    </div>
+                    <div style="flex: 1 1 45%; background-color: rgba(0,0,0,0.5); padding: 20px; border-radius: 10px;">
+                        <h3>Peças Originais e Garantia</h3>
+                        <p>Peças originais com garantia para sua tranquilidade.</p>
+                    </div>
+                    <div style="flex: 1 1 45%; background-color: rgba(0,0,0,0.5); padding: 20px; border-radius: 10px;">
+                        <h3>Especialistas em Diversas Marcas</h3>
+                        <p>Somos qualificados para diversas marcas e modelos.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contato">
+                <h2>Contato</h2>
+                <p>Endereço:
+                    <a href="https://www.google.com/maps/@-22.7913465,-43.2943103,3a,75y,337.32h,90t/data=!3m7!1e1!3m5!1s1T0rhOwxPPIVfcS8_p3diA!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3D1T0rhOwxPPIVfcS8_p3diA%26yaw%3D337.32196!7i16384!8i8192?entry=ttu&g_ep=EgoyMDI1MDUxMy4xIKXMDSoASAFQAw%3D%3D"
+                        target="_blank" class="link-animado">
+                        Rua Mauricío de Abreu 27, Número 15 - Duque de Caxias
+                    </a>
+                </p>
+                <p>Telefone:
+                    <a href="https://wa.me/5521964137367" target="_blank" class="link-animado">(21) 96413-7367</a>
+                </p>
+                <p>Para nos enviar uma mensagem, <a href="contato.html" class="clique-aqui-animado">clique aqui</a> e preencha o formulário.</p>
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Oficina Nascimento. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

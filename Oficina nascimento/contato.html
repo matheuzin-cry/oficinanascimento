@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link rel="icon" href="logo.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contato - Oficina Nascimento</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: url('carro luxo.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            color: white;
+        }
+
+        .form-container {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 40px;
+            margin: 60px 20px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+            max-width: 500px;
+            width: 100%;
+            backdrop-filter: blur(4px);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #00e676;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-weight: 600;
+            margin-top: 16px;
+            margin-bottom: 6px;
+            color: #ccc;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #444;
+            border-radius: 8px;
+            background: #1c1c1c;
+            color: white;
+        }
+
+        textarea {
+            min-height: 120px;
+        }
+
+        button {
+            margin-top: 25px;
+            background: #00e676;
+            border: none;
+            padding: 15px;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #00b84d;
+        }
+
+        .footer-note {
+            text-align: center;
+            margin-top: 25px;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="form-container">
+    <h1>Fale Conosco</h1>
+
+    <form id="contactForm">
+        <label>Nome Completo *</label>
+        <input type="text" id="name" required placeholder="Seu nome completo">
+
+        <label>E-mail *</label>
+        <input type="email" id="email" required placeholder="seu@email.com">
+
+        <label>Telefone *</label>
+        <input type="tel" id="phone" required placeholder="(21) 99999-9999">
+
+        <label>Assunto *</label>
+        <input type="text" id="subject" required placeholder="Motivo do contato">
+
+        <label>Mensagem *</label>
+        <textarea id="message" required placeholder="Escreva sua mensagem aqui..."></textarea>
+
+        <button type="submit">Enviar Mensagem</button>
+    </form>
+
+    <p class="footer-note">* Campos obrigatórios</p>
+</div>
+
+<!-- SCRIPT CONECTADO -->
+<script src="script.js"></script>
+
+</body>
+</html>
